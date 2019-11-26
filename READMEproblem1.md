@@ -5,4 +5,4 @@
 3. I used IDEAL by identifying the problem and considering what possible solutions could work for this problem in a general sense. I then refined these ideas using Duke's 7 steps.
   First, I made a random array that obeyed the constraints of the problem, then traced who would win that game.
   Then, I noticed that the maximum between to extremes of the array were being compared very often. This was an important pattern useful for finding the solution.
-  I then created a couple more test arrays to which i applied my algorithm and found that the outputs were what i expected them to be. Thus I conculuded that my algorithm was working for this problem.
+  I then created a couple more test arrays to which i applied my algorithm and found that the outputs were what i expected them to be. Thus I concluded that my algorithm was working for this problem.
