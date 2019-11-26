@@ -1,0 +1,8 @@
+# Problem 1 - Stone Game
+
+1 & 2. This problem can be solved recursively by first using the method to take the first "turn" by having the first player, in this case Alex, choose the maximum number of stones between the first and last "piles" in the input array, namely, max(piles[0], piles[piles.size - 1]). This number could be stored in a 1-D array of size 2 called "score", where score[0] is Alex's score so far and score[1] is Lee's score so far. We could then apply the same calculation for the second players turn; changing the array indices according to which pile the first player chose. If Alex chose piles[0], then we add that value to score[0] and move on to Lee's turn, which would be max(piles[1], piles[piles.length - 1], then add that value to score[1]. This would continue until the entire array has been traversed, then if score[0] > score[1], return true because Alex won, else return false. Note that we do not have to consider the case where score[0] == score[1] because the total number of stones is odd.
+  
+3. I used IDEAL by identifying the problem and considering what possible solutions could work for this problem in a general sense. I then refined these ideas using Duke's 7 steps.
+  First, I made a random array that obeyed the constraints of the problem, then traced who would win that game.
+  Then, I noticed that the maximum between to extremes of the array were being compared very often. This was an important pattern useful for finding the solution.
+  I then created a couple more test arrays to which i applied my algorithm and found that the outputs were what i expected them to be. Thus I conculuded that my algorithm was working for this problem.
